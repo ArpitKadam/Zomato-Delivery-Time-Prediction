@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: zomato_delivery_time_prediction
+Version: 0.0.0
+Summary: End to End Zomato Delivery Time Prediction Project using MLOps
+Author: ArpitKadam
+Author-email: arpitkadam922@gmail.com
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: summary
