@@ -24,3 +24,7 @@ FEATURE_ENG_OBJ_FILE_NAME = "feature_eng.pkl"
 DATA_TRANSFORMED_DIR = "transformed_data"
 TRAIN_TRANSFORMED_FILE_NAME = "train_transformed.csv"
 TEST_TRANSFORMED_FILE_NAME = "test_transformed.csv"
+
+## MODEL TRAINING CONSTANTS
+MODEL_TRAINING_DIR_NAME = "Model_Training"
+MODEL_OBJECT_NAME = "model.pkl"
