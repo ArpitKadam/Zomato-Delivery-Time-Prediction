@@ -5,6 +5,9 @@ matplotlib
 seaborn
 scikit-learn
 xgboost
+folium
+colorlog
+plotly
 catboost
 pymongo
 from_root

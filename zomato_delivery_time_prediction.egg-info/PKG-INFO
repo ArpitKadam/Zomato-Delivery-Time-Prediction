@@ -12,6 +12,9 @@ Requires-Dist: matplotlib
 Requires-Dist: seaborn
 Requires-Dist: scikit-learn
 Requires-Dist: xgboost
+Requires-Dist: folium
+Requires-Dist: colorlog
+Requires-Dist: plotly
 Requires-Dist: catboost
 Requires-Dist: pymongo
 Requires-Dist: from_root

@@ -3,7 +3,10 @@ README.md
 setup.py
 src/__init__.py
 src/components/__init__.py
+src/components/data_ingestion.py
+src/components/data_transformation.py
 src/configuration/__init__.py
+src/configuration/configuration.py
 src/constants/__init__.py
 src/entity/__init__.py
 src/entity/artifact_entity.py

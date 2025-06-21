@@ -6,6 +6,7 @@ seaborn
 scikit-learn
 xgboost
 folium
+colorlog
 plotly
 catboost
 pymongo
