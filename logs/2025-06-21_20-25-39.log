@@ -1,0 +1,13 @@
+[2025-06-21 20:25:40,414] 6 ZomatoDeliveryLogger - INFO - Starting Data Ingestion Pipeline
+[2025-06-21 20:25:40,414] 25 ZomatoDeliveryLogger - INFO - Data Ingestion started
+[2025-06-21 20:25:40,415] 28 ZomatoDeliveryLogger - INFO - Raw data path: C:\Projects\Zomato-Delivery-Time-Prediction\Artifacts\Data_Ingestion\2025-06-21_20-25-39\raw_data.csv
+[2025-06-21 20:25:43,457] 11 ZomatoDeliveryLogger - INFO - Data downloaded successfully from https://github.com/ArpitKadam/Zomato-Delivery-Time-Prediction/raw/refs/heads/main/Research/data.csv and saved to C:\Projects\Zomato-Delivery-Time-Prediction\Artifacts\Data_Ingestion\2025-06-21_20-25-39\raw_data.csv
+[2025-06-21 20:25:43,457] 32 ZomatoDeliveryLogger - INFO - Data downloaded successfully
+[2025-06-21 20:25:43,544] 36 ZomatoDeliveryLogger - INFO - Raw data shape: (45584, 20)
+[2025-06-21 20:25:43,563] 40 ZomatoDeliveryLogger - INFO - Train data shape: (36467, 20), Test data shape: (9117, 20)
+[2025-06-21 20:25:43,565] 45 ZomatoDeliveryLogger - INFO - Train data path: C:\Projects\Zomato-Delivery-Time-Prediction\Artifacts\Data_Ingestion\2025-06-21_20-25-39\train.csv
+[2025-06-21 20:25:43,565] 46 ZomatoDeliveryLogger - INFO - Test data path: C:\Projects\Zomato-Delivery-Time-Prediction\Artifacts\Data_Ingestion\2025-06-21_20-25-39\test.csv
+[2025-06-21 20:25:43,842] 51 ZomatoDeliveryLogger - INFO - Train data saved to C:\Projects\Zomato-Delivery-Time-Prediction\Artifacts\Data_Ingestion\2025-06-21_20-25-39\train.csv
+[2025-06-21 20:25:43,842] 52 ZomatoDeliveryLogger - INFO - Test data saved to C:\Projects\Zomato-Delivery-Time-Prediction\Artifacts\Data_Ingestion\2025-06-21_20-25-39\test.csv
+[2025-06-21 20:25:43,843] 54 ZomatoDeliveryLogger - INFO - Data Ingestion completed successfully
+[2025-06-21 20:25:43,847] 14 ZomatoDeliveryLogger - INFO - Data Ingestion completed successfully. 
