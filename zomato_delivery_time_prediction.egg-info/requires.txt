@@ -1,0 +1,14 @@
+ipykernel
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+xgboost
+catboost
+pymongo
+from_root
+dill
+PyYAML
+python-multipart
+ipykernel

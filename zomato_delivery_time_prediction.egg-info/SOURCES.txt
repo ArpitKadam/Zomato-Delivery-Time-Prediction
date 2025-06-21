@@ -15,4 +15,5 @@ src/utils/__init__.py
 zomato_delivery_time_prediction.egg-info/PKG-INFO
 zomato_delivery_time_prediction.egg-info/SOURCES.txt
 zomato_delivery_time_prediction.egg-info/dependency_links.txt
+zomato_delivery_time_prediction.egg-info/requires.txt
 zomato_delivery_time_prediction.egg-info/top_level.txt
