@@ -14,13 +14,11 @@ Requires-Dist: scikit-learn
 Requires-Dist: xgboost
 Requires-Dist: folium
 Requires-Dist: colorlog
+Requires-Dist: Flask
 Requires-Dist: plotly
-Requires-Dist: catboost
 Requires-Dist: pymongo
 Requires-Dist: from_root
 Requires-Dist: dill
-Requires-Dist: PyYAML
-Requires-Dist: python-multipart
 Requires-Dist: ipykernel
 Dynamic: author
 Dynamic: author-email

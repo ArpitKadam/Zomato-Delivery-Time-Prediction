@@ -2,12 +2,8 @@ import os
 import sys
 from datetime import datetime
 
-def get_current_time():
-    """Returns the current time in the format YYYY-MM-DD HH-MM-SS"""
-    return str(datetime.now().strftime("%Y-%m-%d_%H-%M-%S"))
 
 ## DATA INGESTION CONSTANTS
-CURRENT_TIME_STAME = get_current_time()
 ROOT_DIR = os.getcwd()
 DATA_LINK = "https://github.com/ArpitKadam/Zomato-Delivery-Time-Prediction/raw/refs/heads/main/Research/data.csv"
 ARTIFACT_DIR_NAME = "Artifacts"

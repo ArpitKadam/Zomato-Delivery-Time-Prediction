@@ -49,7 +49,7 @@ class ModelTrainer:
                     "max_iter": [1000, 2000, 3000]
                 },
                 "Ridge": {
-                    "alpha": [0.001, 0.01, 0.1, 1.0, 2.0],
+                    "alpha": [0.001, 0.01, 0.1],
                     "solver": ["auto", "svd", "cholesky"]
                 },
                 "ElasticNet": {
@@ -66,19 +66,19 @@ class ModelTrainer:
                     "max_depth": [None, 5, 10, 20]
                 },
                 "RandomForestRegressor": {
-                    "n_estimators": [50, 100, 150, 200],
-                    "max_depth": [None, 10, 20],
+                    "n_estimators": [50, 100, 150],
+                    "max_depth": [None, 10],
                     "bootstrap": [True, False]
                 },
                 "GradientBoostingRegressor": {
-                    "n_estimators": [50, 100, 150, 200],
-                    "learning_rate": [0.05, 0.1, 1.0, 2.0],
-                    "max_depth": [3, 5, 9]
+                    "n_estimators": [50, 100, 150],
+                    "learning_rate": [0.05, 0.1, 1.0],
+                    "max_depth": [3, 5]
                 },
                 "XGBRegressor": {
-                    "n_estimators": [50, 100, 150, 200],
-                    "learning_rate": [0.001, 0.1, 1.0, 2.0],
-                    "max_depth": [3, 5, 7],
+                    "n_estimators": [50, 100, 150],
+                    "learning_rate": [0.001, 0.1, 1.0],
+                    "max_depth": [3, 5],
                     "reg_lambda": [1, 2, 3],
                     "reg_alpha": [0, 1]
                 }

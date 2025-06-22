@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Time Prediction | Success Analytics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #fff7ed 0%, #ffffff 50%, #fef2f2 100%);
+        }
+        
+        .header-gradient {
+            background: linear-gradient(135deg, #ea580c 0%, #dc2626 50%, #db2777 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .icon-container {
+            background: linear-gradient(135deg, var(--gradient-from), var(--gradient-to));
+        }
+        
+        .btn-gradient {
+            background: linear-gradient(135deg, var(--btn-from), var(--btn-to));
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gradient:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .corner-logo {
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+        
+        .corner-logo:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .footer-element {
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+        
+        .footer-element:hover {
+            opacity: 1;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <!-- Header -->
+    <header class="header-gradient text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-10"></div>
+        <div class="relative z-10 px-6 py-16 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+                    Zomato Time
+                    <span class="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+                        Prediction
+                    </span>
+                </h1>
+                <p class="mt-6 text-lg md:text-xl leading-8 text-orange-100">
+                    Advanced machine learning pipeline for accurate delivery time predictions
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Corner Logos -->
+    <img src="https://successanalytics.in/logo.ab81d45e.png" alt="Success Analytics" 
+         class="corner-logo fixed top-4 left-4 w-12 h-12 rounded-full bg-white bg-opacity-80 backdrop-blur-sm p-2 z-50">
+    <img src="https://successanalytics.in/logo.ab81d45e.png" alt="Success Analytics" 
+         class="corner-logo fixed top-4 right-4 w-12 h-12 rounded-full bg-white bg-opacity-80 backdrop-blur-sm p-2 z-50">
+    <img src="https://successanalytics.in/logo.ab81d45e.png" alt="Success Analytics" 
+         class="corner-logo fixed bottom-20 left-4 w-12 h-12 rounded-full bg-white bg-opacity-80 backdrop-blur-sm p-2 z-50">
+    <img src="https://successanalytics.in/logo.ab81d45e.png" alt="Success Analytics" 
+         class="corner-logo fixed bottom-20 right-4 w-12 h-12 rounded-full bg-white bg-opacity-80 backdrop-blur-sm p-2 z-50">
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16 pb-24">
+        <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
+            
+            <!-- Train Pipeline Card -->
+            <div class="card-hover relative overflow-hidden border-0 bg-white bg-opacity-70 backdrop-blur-sm rounded-xl shadow-xl">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-500 from-opacity-10 to-purple-500 to-opacity-10 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="relative">
+                    <div class="icon-container h-64 flex items-center justify-center text-white" 
+                         style="--gradient-from: #3b82f6; --gradient-to: #8b5cf6;">
+                        <svg class="w-24 h-24 floating" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
+                                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Train Pipeline</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Build and train machine learning models with our advanced pipeline system
+                        </p>
+                        <a href="/train" class="block">
+                            <button class="btn-gradient w-full text-white font-semibold py-3 px-6 rounded-lg text-lg flex items-center justify-center"
+                                    style="--btn-from: #2563eb; --btn-to: #7c3aed;">
+                                Start Training
+                                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Prediction Card -->
+            <div class="card-hover relative overflow-hidden border-0 bg-white bg-opacity-70 backdrop-blur-sm rounded-xl shadow-xl">
+                <div class="absolute inset-0 bg-gradient-to-br from-green-500 from-opacity-10 to-emerald-500 to-opacity-10 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="relative">
+                    <div class="icon-container h-64 flex items-center justify-center text-white" 
+                         style="--gradient-from: #10b981; --gradient-to: #059669;">
+                        <svg class="w-24 h-24 floating" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
+                                  d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Single Prediction</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Get instant delivery time predictions for individual orders
+                        </p>
+                        <a href="/predict" class="block">
+                            <button class="btn-gradient w-full text-white font-semibold py-3 px-6 rounded-lg text-lg flex items-center justify-center"
+                                    style="--btn-from: #059669; --btn-to: #047857;">
+                                Predict Now
+                                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batch Prediction Card -->
+            <div class="card-hover relative overflow-hidden border-0 bg-white bg-opacity-70 backdrop-blur-sm rounded-xl shadow-xl">
+                <div class="absolute inset-0 bg-gradient-to-br from-orange-500 from-opacity-10 to-red-500 to-opacity-10 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="relative">
+                    <div class="icon-container h-64 flex items-center justify-center text-white" 
+                         style="--gradient-from: #f97316; --gradient-to: #dc2626;">
+                        <svg class="w-24 h-24 floating" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
+                                  d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Batch Prediction</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Process multiple predictions efficiently with batch processing
+                        </p>
+                        <a href="/batch" class="block">
+                            <button class="btn-gradient w-full text-white font-semibold py-3 px-6 rounded-lg text-lg flex items-center justify-center"
+                                    style="--btn-from: #ea580c; --btn-to: #dc2626;">
+                                Batch Process
+                                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fixed bottom-0 left-0 right-0 bg-gray-900 bg-opacity-95 backdrop-blur-sm border-t border-gray-800">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-center gap-3">
+                <img src="https://successanalytics.in/logo.ab81d45e.png" alt="Success Analytics" 
+                     class="footer-element w-10 h-10 rounded-full bg-white bg-opacity-10 p-2 hover:bg-opacity-20">
+                <p class="footer-element text-gray-300 font-medium">Success Analytics</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

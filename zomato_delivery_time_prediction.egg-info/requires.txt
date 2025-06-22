@@ -7,11 +7,9 @@ scikit-learn
 xgboost
 folium
 colorlog
+Flask
 plotly
-catboost
 pymongo
 from_root
 dill
-PyYAML
-python-multipart
 ipykernel
