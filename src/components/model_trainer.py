@@ -45,28 +45,28 @@ class ModelTrainer:
             param = {
                 "LinearRegression": {},
                 "Lasso": {
-                    "alpha": [0.01, 0.1, 1.0, 10.0],
-                    "max_iter": [1000, 2000, 3000]
+                    "alpha": [0.1, 1.0],
+                    "max_iter": [1000, 2000]
                 },
                 "Ridge": {
-                    "alpha": [0.001, 0.01, 0.1],
+                    "alpha": [ 0.01, 0.1],
                     "solver": ["auto", "svd", "cholesky"]
                 },
                 "ElasticNet": {
-                    "alpha": [0.01, 0.1, 1.0, 5.0],
-                    "l1_ratio": [0.1, 0.5, 0.9],
-                    "max_iter": [1000, 2000, 3000]
+                    "alpha": [0.01, 0.1],
+                    "l1_ratio": [0.1, 0.5],
+                    "max_iter": [1000, 2000]
                 },
                 "KNeighborsRegressor": {
-                    "n_neighbors": [3, 5, 7, 9],
+                    "n_neighbors": [3, 5, 7],
                     "weights": ["uniform", "distance"]
                 },
                 "DecisionTreeRegressor": {
                     "criterion": ["squared_error", "friedman_mse"],
-                    "max_depth": [None, 5, 10, 20]
+                    "max_depth": [None, 5, 10]
                 },
                 "RandomForestRegressor": {
-                    "n_estimators": [50, 100, 150],
+                    "n_estimators": [50, 100],
                     "max_depth": [None, 10],
                     "bootstrap": [True, False]
                 },
