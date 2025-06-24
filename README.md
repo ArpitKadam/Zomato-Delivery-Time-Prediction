@@ -9,12 +9,9 @@
 ![MLflow](https://img.shields.io/badge/MLflow-Enabled-orange.svg)
 ![Dagshub](https://img.shields.io/badge/Dagshub-Enabled-brightgreen.svg)
 
-[License](https://github.com/ArpitKadam/Zomato-Delivery-Time-Prediction/blob/main/LICENSE) | [Dagshub](https://dagshub.com/ArpitKadam/Zomato-Delivery-Time-Prediction) | [App](https://zomato-delivery-time-prediction-jrf9.onrender.com)
+[License](https://github.com/ArpitKadam/Zomato-Delivery-Time-Prediction/blob/main/LICENSE) | [Dagshub](https://dagshub.com/ArpitKadam/Zomato-Delivery-Time-Prediction) 
 
 </div>
----
-
-![App](https://1drv.ms/i/c/25ab493955eec55c/ERruyh_m9uxAue-5JwhjLv8BbLV_MsBEQiJTr3Y9-Xky-A?e=BLnE9h)
 
 ---
 
