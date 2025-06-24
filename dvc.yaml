@@ -37,7 +37,7 @@ stages:
     cmd: python app.py
     deps:
       - src/pipeline/batch.py
-      - src/pipeline/training_pipeline.py
+      - src/pipeline/prediction_pipeline.py
       - Artifacts/Model_Training/model.pkl
     outs:
       - batch_prediction/raw_input/input_data.csv
