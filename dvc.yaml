@@ -1,24 +1,43 @@
 stages:
-  train:
+  data_ingestion:
     cmd: python main.py
     deps:
-      - main.py
-      - src/
+      - src/components/data_ingestion.py
+      - src/pipeline/training_pipeline.py
     outs:
       - Artifacts/Data_Ingestion/raw_data.csv
       - Artifacts/Data_Ingestion/train.csv
       - Artifacts/Data_Ingestion/test.csv
+
+  data_transformation:
+    cmd: python main.py
+    deps:
+      - src/components/data_transformation.py
+      - src/pipeline/training_pipeline.py
+      - Artifacts/Data_Ingestion/train.csv
+      - Artifacts/Data_Ingestion/test.csv
+    outs:
       - Artifacts/Data_Transformation/data tranformation models/feature_eng.pkl
       - Artifacts/Data_Transformation/data tranformation models/preprocessor.pkl
       - Artifacts/Data_Transformation/transformed_data/train_transformed.csv
       - Artifacts/Data_Transformation/transformed_data/test_transformed.csv
+
+  model_trainer:
+    cmd: python main.py
+    deps:
+      - src/components/model_trainer.py
+      - src/pipeline/training_pipeline.py
+      - Artifacts/Data_Transformation/transformed_data/train_transformed.csv
+      - Artifacts/Data_Transformation/transformed_data/test_transformed.csv
+    outs:
       - Artifacts/Model_Training/model.pkl
       - Artifacts/Model_Training/report.json
 
   predict:
-    cmd: python src/pipeline/batch.py
+    cmd: python app.py
     deps:
       - src/pipeline/batch.py
+      - src/pipeline/training_pipeline.py
       - Artifacts/Model_Training/model.pkl
     outs:
       - batch_prediction/raw_input/input_data.csv
