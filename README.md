@@ -4,7 +4,6 @@
 
 [![GitHub](https://img.shields.io/github/stars/ArpitKadam/Zomato-Delivery-Time-Prediction?style=social)](https://github.com/ArpitKadam/Zomato-Delivery-Time-Prediction)
 [![GitHub issues](https://img.shields.io/github/issues/ArpitKadam/Zomato-Delivery-Time-Prediction)](https://github.com/ArpitKadam/Zomato-Delivery-Time-Prediction/issues)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python Version](https://img.shields.io/badge/Python-3.10%2B-green.svg)
 ![Flask](https://img.shields.io/badge/Flask-2.0%2B-blue.svg)
 ![MLflow](https://img.shields.io/badge/MLflow-Enabled-orange.svg)
@@ -157,7 +156,7 @@ We welcome contributions! Here's how you can help:
 
 ## 📄 License
 
-This project is licensed under the [MIT License](https://github.com/ArpitKadam/Zomato-Delivery-Time-Prediction/blob/main/LICENSE).
+This project is licensed under the [GPL-3.0 license](https://github.com/ArpitKadam/Zomato-Delivery-Time-Prediction/blob/main/LICENSE).
 
 ---
 
