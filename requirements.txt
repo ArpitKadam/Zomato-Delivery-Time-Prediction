@@ -8,6 +8,9 @@ xgboost
 folium
 colorlog
 Flask
+mlflow
+dagshub
+dvc
 plotly
 pymongo
 from_root
