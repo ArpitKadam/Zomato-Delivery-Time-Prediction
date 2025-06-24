@@ -13,6 +13,12 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 import numpy as np
+import mlflow
+import dagshub
+
+dagshub.init(repo_owner='ArpitKadam', repo_name='Book-Recommender-App', mlflow=True)
+
+mlflow.autolog()
 
 class Feature_Engineering(BaseEstimator, TransformerMixin):
 

@@ -15,6 +15,12 @@ from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 from xgboost import XGBRegressor
 import numpy as np
 import json
+import mlflow
+import dagshub
+
+dagshub.init(repo_owner='ArpitKadam', repo_name='Book-Recommender-App', mlflow=True)
+
+mlflow.autolog()
 
 @dataclass
 class ModelTrainerConfig:

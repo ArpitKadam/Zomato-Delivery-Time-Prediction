@@ -7,6 +7,12 @@ import os
 from dataclasses import dataclass
 import pandas as pd
 from sklearn.model_selection import train_test_split
+import mlflow
+import dagshub
+
+dagshub.init(repo_owner='ArpitKadam', repo_name='Book-Recommender-App', mlflow=True)
+
+mlflow.autolog()
 
 @dataclass
 class DataIngestionConfig:

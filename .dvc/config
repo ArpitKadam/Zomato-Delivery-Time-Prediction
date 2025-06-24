@@ -1,0 +1,6 @@
+[core]
+    remote = dagshub
+['remote "myremote"']
+    url = https://dagshub.com/ArpitKadam/Zomato-Delivery-Time-Prediction.mlflow
+['remote "dagshub"']
+    url = https://dagshub.com/ArpitKadam/Zomato-Delivery-Time-Prediction.mlflow.dvc

@@ -23,6 +23,12 @@ RAW_DIR = os.path.join(ROOT_DIR, PREDICTION_FOLDER, RAW_FOLDER)
 FEATURE_ENG_DIR = os.path.join(ROOT_DIR, PREDICTION_FOLDER, FEATURE_ENG_FOLDER)
 TRANSFORMED_DIR = os.path.join(ROOT_DIR, PREDICTION_FOLDER, TRANSFORMED_FOLDER)
 BATCH_PREDICTION_DIR = os.path.join(ROOT_DIR, PREDICTION_FOLDER, PREDICTION_CSV_FOLDER)
+import mlflow
+import dagshub
+
+dagshub.init(repo_owner='ArpitKadam', repo_name='Book-Recommender-App', mlflow=True)
+
+mlflow.autolog()
 
 class Batch_prediction:
     def __init__(self, input_file_path, model_file_path, transformer_file_path, feature_engineering_file_path):
